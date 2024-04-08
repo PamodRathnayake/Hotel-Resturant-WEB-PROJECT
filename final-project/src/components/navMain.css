@@ -1,0 +1,15 @@
+.nav-container{
+    @apply w-full bg-white flex justify-between items-center fixed top-0 left-0 h-12 z-50;
+}.logo{
+    @apply my-2 mr-4 ml-12  ;
+}.logo-img{
+    @apply h-8 ;
+}.buttons{
+    @apply flex mr-12 ml-4 ;
+}.btn{
+    @apply my-2 mx-4  hover:text-blue-500 transition;
+}.bsign{
+    @apply flex items-center ;
+}.ico{
+    @apply mx-2 text-base  ;
+}

@@ -1,0 +1,179 @@
+.res-nav-con{
+    @apply fixed py-2 px-8 flex justify-between bg-white w-full items-center h-14 z-50 ;
+}.logo img{
+    @apply h-9
+}
+/* Add these styles to your existing CSS or create a new CSS file */
+
+/* Style for the search suggestions dropdown */
+.search-suggestions {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the input */
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for each suggestion item */
+.search-suggestions li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Style for the last suggestion item (no border) */
+.search-suggestions li:last-child {
+  border-bottom: none;
+}
+
+/* Highlight the suggestion on hover */
+.search-suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.search-btn{
+  @apply  h-9 rounded-md px-2 absolute right-0 top-0 hover:scale-110;
+  transition-duration: .3s
+}
+.search-png{
+  @apply w-10 ;
+}
+.search input{
+    @apply bg-slate-200 rounded-lg py-2 px-3 pr-20;
+    width: 25vw;
+}
+
+.rest-log{
+  @apply flex gap-4 items-center;
+}.rest-log-cart{
+  @apply relative text-white cursor-pointer bg-black rounded-lg px-4 py-2 pl-14
+}.rest-log-cart img{
+  @apply absolute w-7 top-1 left-2;
+  filter: invert();
+}
+.buttons,.rest-log{
+  @apply flex items-center gap-2;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 3.52rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    /* justify-content: end; */
+    justify-content: flex-end;
+    align-items: center;
+    cursor: auto;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    color: black;
+    height: 100vh;
+    width: 40vw;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media(max-width:1100px){
+    .modal-content{
+      width: 70vw;
+    }
+  }
+  @media(max-width:800px){
+    .modal-content{
+      width: 100vw;
+    }
+  }
+
+  .modal-close {
+    color: #333;
+    cursor: pointer;
+    float: right;
+    font-weight: 900;
+    font-size: larger;
+    transition-duration: .5s;
+    @apply hover:text-red-600 absolute right-12 top-6;
+  }
+  .res-no-items{
+    @apply flex flex-col items-center gap-4 justify-center w-full h-full p-10 text-center ;
+  }
+  .res-no-items h3{
+    @apply text-2xl font-bold
+  }
+  .res-no-items button{
+    @apply bg-black text-white hover:bg-black/75 px-4 py-2 rounded-full
+  }
+
+  .res-items{
+    @apply flex flex-col justify-between gap-4;
+    height: 89vh;
+  }
+  .res-items h1{
+    @apply text-xl font-bold text-center;
+  }
+  .res-itms-con{
+    @apply overflow-y-scroll p-2 bg-slate-50 flex flex-col gap-2 ;
+    height: 70%;
+  }.res-itm-row{
+    @apply flex bg-white rounded-md items-center justify-between py-2 px-4 overflow-hidden hover:shadow-md;
+  }.res-itm-row input{
+    @apply bg-slate-50 text-center py-1;
+  }
+  .cat-tot-price{
+    @apply text-center font-semibold text-2xl
+  }
+  .cart-btn-row{
+    @apply py-3 flex justify-end mb-2 gap-4 ;
+  }.cart-btn-row button{
+    transition-duration: .5s;
+    @apply mr-5 py-1 px-3 rounded-md hover:text-white hover:bg-orange-600 hover:shadow-md ;
+  }
+
+  @media(max-width:840px){
+
+    .bsignout,.resnavh{
+      display: none;
+    }.logo img{
+      height: 2rem;
+    }.logo{
+      margin: 0;
+      padding: .5rem 1rem;
+    }
+    .res-nav-con{
+      padding: 0rem;
+      margin: 0;
+      width: 100vw;
+      /* background-color: red; */
+      gap: 1rem;
+    }.search{
+      width: 40%;
+      /* background-color: red; */
+    }.search input{
+      /* width: 100%; */
+      padding-right: 4rem;
+      width: 37vw;
+    }.buttons{
+      padding: .5rem 1rem;
+      margin: 0;
+    }.search-btn{
+      right: 1rem;
+    }.resnavu{
+      display: none;
+    }.rest-log-cart{
+      margin-right: 1.5rem;
+    }
+  }
+

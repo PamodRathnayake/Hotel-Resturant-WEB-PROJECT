@@ -1,0 +1,135 @@
+.container-sign-123 {
+    width: 100vw;
+    height: 100vh;
+    background-color: gold;
+    overflow: hidden;
+    position: relative; /* Add position relative for pseudo-element positioning */
+  
+    /* Background image and animation properties */
+    background-image: url('../assets/img/1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundFadeChange 20s infinite;
+  }
+  
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(.6);
+  }
+  
+  .container.w-full {
+    width: 100%;
+  }
+  
+  .container.h-screen {
+    height: 100vh;
+  }
+  
+  .container.bg-black {
+    background-color: black;
+  }
+  
+  .container.bg-opacity-80 {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .container.text-white {
+    color: white;
+  }
+  
+  .container.border-0 {
+    border: none;
+  }
+  
+@keyframes backgroundFadeChange {
+    0% {
+      background-image: url("../assets/img/hall-bg2.png");
+    }15%{
+      background-image: url("../assets/img/buffet.png");
+    }25% {
+      background-image: url("../assets/img/hall4.jpg");
+    }40%{
+      background-image: url("../assets/img/2.png");
+    }50% {
+      background-image: url("../assets/img/view.jpg");
+    }65%{
+      background-image: url("../assets/img/3.png");
+    }
+    /* 75% {
+      background-image: url("../assets/img/4.png");
+    }90%{
+      background-image: url("../assets/img/4.png");
+    } */
+}
+.box{
+    @apply rounded-lg absolute bg-white flex shadow-md ;
+    width: 80%;
+    max-width: 1200px;
+    min-height: 80%;
+    max-height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* bdxgfdz */
+}.banner{
+    width: 60%;
+    background-image:
+    url('../assets/img/7.png');
+    background-position: center;
+    background-size: cover;
+    @apply rounded-r-lg relative;
+}
+.form-container{
+    width: 40% ;
+    @apply flex flex-col justify-between overflow-hidden text-black;
+}.heading{
+    @apply flex flex-col items-center mx-4 my-6 ;
+}.heading h2{
+    @apply text-xl font-semibold;
+}.logoS{
+    @apply h-10 my-2;
+}.signupFrm{
+    @apply flex flex-col items-center ;
+}.inp{
+    @apply flex flex-col my-2;
+    width: 80%;
+    max-width: 20rem;
+}.txt{
+    @apply bg-slate-200 rounded-md py-1 px-2;
+}.btnSignup{
+    @apply bg-yellow-800 rounded-md my-6 text-center text-white py-1 transition cursor-pointer hover:bg-yellow-700;
+    transition-duration: .4s;
+    width: 80%;
+    max-width: 20rem;
+}.agree{
+    @apply flex items-baseline gap-2;
+    width: 80%;
+    max-width: 20rem;
+}.linkToLog{
+    @apply text-center my-4 hover:text-indigo-800 cursor-pointer transition;
+    transition-duration: .5s;
+}.closeSignup{
+    @apply text-2xl float-right m-4 cursor-pointer transition hover:text-red-500 ;
+    transition-duration: .5s;
+}.signupb{
+    @apply w-full;
+}.valiErr{
+    @apply text-red-600 absolute top-full text-xs border shadow-md shadow-red-800/50 rounded-sm leading-3  ;
+}
+@media(max-width:900px){
+    .form-container{
+        width: 100% ;
+    }.banner{
+        width: 0%;
+    }.closeSignup{
+        color: red;
+    }
+}

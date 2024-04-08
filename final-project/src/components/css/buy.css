@@ -1,0 +1,113 @@
+.buy-main-container{
+    @apply bg-slate-100 ;
+}.buy-hero{
+    min-height: calc(70vh ) ;
+    @apply p-4 flex gap-4;
+}.frm-container{
+    @apply bg-white p-4 rounded-md;
+    width: 40%;
+}.frm-container form{
+    @apply flex flex-col gap-5 relative h-full justify-around;
+}.buy-itm-row{
+    @apply flex flex-col relative  ;
+}.buy-itm-row label{
+    @apply font-semibold;
+}.buy-itm-row input{
+    @apply bg-slate-100 rounded-md py-1 px-3 overflow-hidden ;
+}.buy-btn-row{
+    @apply absolute bottom-0 right-0 flex gap-4;
+}.buy-btn-row button{
+    transition-duration: .3s;
+    @apply bg-orange-200 border border-orange-600 rounded-md py-1 px-2 hover:text-white hover:bg-orange-600 ;
+}
+
+.pay-details-con{
+    @apply bg-white flex-grow rounded-md p-4 flex flex-col relative;
+}
+.pay-notice{
+    @apply border rounded-md p-2 border-red-200;
+}.pay-notice h5{
+    @apply font-semibold text-red-600 ;
+}.pay-notice p{
+    text-align: center;
+}
+.pay-details{
+    @apply p-2 flex flex-col gap-2 py-4  ;
+}.pay-details h5{
+    @apply font-semibold ;
+}
+.pay-details-row{
+    @apply w-full flex justify-between items-center relative ;
+}.pay-details-row p{
+    @apply font-light
+}
+.pay-btn-con{
+    @apply  absolute bottom-4 right-4 flex gap-4 ; 
+}
+.pay-details-con button{
+    @apply bg-orange-600 rounded-lg text-white py-2 px-4 hover:bg-orange-400;
+    transition-duration: .3s;
+}.pay-error{
+    @apply text-red-600 absolute top-full text-xs right-0;
+}.sent{
+    @apply text-2xl w-full h-full flex justify-center items-center text-orange-600;
+}
+@media(max-width:700px){
+    .buy-hero{
+        flex-direction: column;
+        align-items: center;
+    }.frm-container,.pay-details-con{
+        width: 100%;
+    }.pay-details{
+        height: 13rem;
+        overflow: hidden;
+    }.sent{
+        height: 20rem;
+    }.pay-details-con{
+        height: 20rem;
+    }
+}
+.welcome-con {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+  .welcome p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .welcome h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .welcome h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .welcome button {
+    background-color: #fc5000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .welcome button:hover {
+    background-color: #e46d0b;
+  }
+  

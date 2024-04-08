@@ -1,0 +1,15 @@
+.whatsapp-chat {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+  
+  .whatsapp-icon {
+    width: 4rem; /* Adjust icon size */
+    height: 4rem;
+    cursor: pointer;
+    transition-duration: .3s;
+    @apply hover:scale-110 ;
+  }
+  

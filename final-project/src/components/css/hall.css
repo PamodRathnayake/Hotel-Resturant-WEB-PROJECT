@@ -1,0 +1,168 @@
+@media(max-width:900px){
+    /* .hall-nav{
+        margin-top: 10rem ;
+        padding: 10rem;
+        background-color: brown ;
+    } */
+}
+.hall-main-container{
+    @apply bg-orange-100/50 w-full mt-12 overflow-x-hidden;
+}.hall-head{
+    height: 50vh;
+    width: 100%;
+    @apply bg-white flex flex-col items-center justify-center text-center gap-6 overflow-hidden;
+}.hall-head h2{
+    @apply font-semibold text-lg
+}.hall-head h1{
+    @apply font-bold text-3xl
+}.hall-head h2, .hall-head h1 , .hall-head p{
+    width: 55%;
+    @apply py-2;
+}
+@media(max-width:1000px){
+    .hall-head{
+        height: 60vh;
+    }
+}
+@media(max-width:700px){
+    .hall-head{
+        height: 80vh;
+    }
+}
+@media(max-width:500px){
+    .hall-head{
+        height: 100vh;
+    }.hall-head h2, .hall-head h1 , .hall-head p{
+        width: 75%;
+    }
+}
+.hall-about{
+    @apply flex py-20 justify-between gap-8 mx-auto;
+    width: 75%;
+    max-width: 1200px;
+}.hall-about-txt{
+    @apply  flex flex-col justify-between;
+    width: 40%;
+    height: 154vh;
+}.hall-about-txt-one {
+    @apply  text-2xl  font-bold  ;
+    width: 45%;
+    letter-spacing: .25em;
+    height: 48vh;
+} 
+.hall-about-txt-two {
+    height: 48vh;
+    @apply bg-white  overflow-hidden p-16 flex flex-col justify-evenly;
+}.hall-about-txt-two h3{
+    @apply text-xl;
+}
+.hall-about-img{
+    @apply flex flex-col gap-8 ;
+    width: 60%;
+}
+.hall-about-img-1{
+    @apply rounded-sm overflow-hidden cursor-pointer hover:saturate-150;
+    height: 75vh;
+    width: 100%;
+    transition-duration: .5s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media(max-width:1300px){
+    .hall-about-txt-one {
+        width: 55%;
+    } 
+}@media(max-width:1100px){
+    .hall-about-txt-one {
+        width: 60%;
+    }.hall-about-txt-two {
+        @apply p-8;
+    }
+}@media(max-width:900px){
+    .hall-about-txt-one {
+        width: 75%;
+    } 
+}
+@media (max-width: 700px) {
+    .hall-about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hall-about-txt {
+        width: 100%;
+        height: auto;
+    }
+    .hall-about-txt-one {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .hall-about-txt-two {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        height: 25vh;
+    }
+
+    .hall-about-img {
+        width: 100%;
+        gap: 1rem;
+    }
+}
+
+
+.hall-before-footer{
+    @apply bg-white w-full py-16 ; 
+}.hall-before-footer p{
+    width: 70%;
+    @apply mx-auto text-center text-xl;
+}
+
+
+.hall-images{
+    display: grid;
+    gap:0;
+    width: 100vw;
+    height: 70vh;
+    grid-template-columns: repeat(6,auto);
+    
+}.hall-images > img{
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .5s linear;
+}.hall-images img:hover{
+    filter: grayscale(0);
+    width: 30vw;
+}
+@media (max-width: 1000px) {
+    .hall-images{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .1rem; 
+    }.hall-images > img{
+        height: 40vh;
+        cursor: pointer;
+        position: relative;
+        vertical-align: middle;
+    }
+}
+
+.hall-links{
+    @apply relative bg-white w-full flex justify-between px-4 py-2 ;
+}
+.hall-lnk{
+    transition-duration: .3s;
+    @apply hover:text-orange-600 hover:font-bold
+}
+
+  

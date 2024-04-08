@@ -1,0 +1,58 @@
+the frontend is divided into two aspects namely the restaurant and hotel . users can login to both via the same account .
+
+in the restaurant part there are several varieties of foods. the customers can choose the food items they want and pay for them and order from the comfort of their home . 
+
+regarding the hotel aspect , customers can explore the site and choose the best suite and menus that suit them and book them online
+
+
+We will be using
+
+IDE  ------
+
+vs-code
+
+
+Web Languages -----
+
+html
+css
+java-script
+php
+
+
+Frontend Frameworks ------
+
+Tailwind-css
+react-js
+
+
+Backend Frameworks -----
+
+Node-js
+Laravel
+
+
+Database ----
+
+Mysql 
+
+
+Server ----
+
+xampp server
+
+
+
+
+
+
+
+
+
+A website that consists of entries to both the peellakanda restaurant and reception hall
+
+
+
+
+
+Peellakanda Hotel Web Project

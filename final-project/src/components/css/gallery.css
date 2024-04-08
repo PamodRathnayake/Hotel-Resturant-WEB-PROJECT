@@ -1,0 +1,43 @@
+  .gal-main-container{
+    @apply w-full pb-16 pt-16 ;
+  }.gal-main-container > p, .gal-main-container h2{
+    @apply font-bold px-16 text-xl ;
+  }.gal-main-container h2{
+    @apply text-5xl text-orange-950 pb-10  ; 
+  }.gal-main-container h2 span{
+    @apply  text-orange-800 ; 
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .7rem;
+    height: 120vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 80%;
+    padding-right: .3rem ;
+    @apply mx-auto ;
+  }
+  .gallery-item img {
+    border-radius: .3rem;
+    transition-duration: .5s;
+    width: 100%; /* Make the image take up 100% of the container's width */
+    height: 40vh; /* Make the image take up 100% of the container's height */
+    object-fit: cover;
+  }
+  .gallery-item img:hover{
+    scale: 1.02;
+  }
+
+  @media(max-width:800px){
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      gap: .5rem;
+      width: 90%;
+    }
+    .gallery-item img {
+      width: 100%; 
+      object-fit: cover;
+    }
+  }

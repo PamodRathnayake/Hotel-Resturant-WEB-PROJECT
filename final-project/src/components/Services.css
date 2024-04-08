@@ -1,0 +1,28 @@
+.services_main_container{
+    @apply mt-12 w-full h-screen flex flex-col items-center justify-center text-white;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url('../components/Hotel/img/servicesbg.jpg');
+    background-position: center;
+    background-size: cover;
+}.services_main_container h1{
+    @apply text-4xl font-bold px-4 py-4 text-center;
+    width: 60%;
+}.services_main_container p{
+    @apply text-lg px-8 py-4 text-center text-slate-200;
+    width: 80% ; 
+}.services_main_container h2{
+    @apply text-xl font-semibold text-center text-slate-100 ;
+    width: 70% ;
+}
+@media (max-width: 768px) {
+    .services_main_container h1 {
+      font-size: 3rem;
+    }
+    .services_main_container p {
+      font-size: 1.1rem; 
+    }
+    .services_main_container h2 {
+      font-size: 1.5rem; 
+    }
+}

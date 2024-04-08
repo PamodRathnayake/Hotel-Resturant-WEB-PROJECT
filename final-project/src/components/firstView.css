@@ -1,0 +1,77 @@
+.mainC{
+    @apply w-full relative;
+}
+.main-container{
+    @apply flex justify-between w-full relative;
+    transform: translateY(3rem);
+    height: 93vh;
+}.col1{
+    @apply w-1/2 relative;
+}.hotel{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../assets/img/7.png');
+    background-position: center;
+    background-size: cover;
+}.resturant{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../assets/img/res.jpg');
+    background-position: center;
+    background-size: cover; 
+}.txt-container{
+    @apply text-white flex flex-col items-center p-4  w-full text-center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}.title{
+    @apply text-2xl  mx-4 my-8;
+}.btns{
+    @apply w-auto border-none inline ;
+    background: rgba(225, 225, 225, 0.4);
+    border-radius: .5em;
+    padding: .6em 1em;   
+    /* width: 100px; */
+    /* padding: 5px 0; */
+    /* text-align: center; */
+    /* margin: 15px 7px; */
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid #ff9100;
+    background: transparent;
+    color: #fff;
+    cursor: pointer; 
+    transition: 0.5s;
+}
+.btns:hover{
+    border: none;
+    background: #ff9101;
+}
+.main-container h1 {
+    @apply absolute z-10 bottom-0 text-white text-5xl px-1 py-6  ;
+    left: 50%;
+    text-shadow: 8px 8px 7px rgba(255, 255, 255, .5);
+    transform: translateX(-50%);
+    /* line-height: 90px; */
+    /* margin-left: -10px; */
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../assets/img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s infinite;
+    transition-timing-function: linear;
+}
+@keyframes back{
+    0%{
+        background-position: 0px 0px;
+    }
+    50%{
+        background-position: 2000px 0;
+    }
+    100%{
+        background-position: 0px 0px;
+    }
+}

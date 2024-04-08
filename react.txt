@@ -1,0 +1,62 @@
+npm install react-router-dom
+
+
+for php 
+npm install axios
+
+
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+
+backend ---------------------------------------------------------------------------------------------------------------
+
+npm init -y
+npm i mysql express cors nodemon
+
+
+
+frontend --------------------------------------------------------------------------------------------------------------
+
+
+npm create vite@latest
+
+npm install react-router-dom
+
+-----------------------------------------------------
+npm install -D tailwindcss
+npx tailwindcss init
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+index.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npm install -D postcss postcss-cli postcss-import postcss-nested postcss-preset-env
+
+postcss.config.cjs
+
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {}
+  }
+};
+-------------------------------------------------------
